@@ -170,6 +170,70 @@
   table.cmp td .dash{color:#94A3B8}
   table.cmp .num{font-variant-numeric:tabular-nums}
 
+  /* ---------- COMPARE FEATURE ---------- */
+  .cmp-add{
+    margin-top:14px;width:100%;font-family:inherit;font-size:.86rem;font-weight:600;cursor:pointer;
+    border:1.5px solid var(--line);background:#fff;color:var(--secondary);
+    padding:11px;border-radius:12px;transition:all .2s ease;display:flex;align-items:center;justify-content:center;gap:7px;
+  }
+  .cmp-add:hover{border-color:var(--primary);color:var(--ink)}
+  .cmp-add.on{background:var(--primary);color:#fff;border-color:var(--primary)}
+  .cmp-add.dim{opacity:.4;cursor:not-allowed}
+  .cmp-add svg{width:16px;height:16px;flex:none}
+  /* table checkbox */
+  table.cmp td.pick,table.cmp th.pick{text-align:center;width:46px}
+  .cmp-check{width:18px;height:18px;cursor:pointer;accent-color:var(--cta)}
+
+  /* floating bar */
+  .compare-bar{
+    position:fixed;left:0;right:0;bottom:0;z-index:60;transform:translateY(120%);
+    transition:transform .3s cubic-bezier(.2,.8,.2,1);
+    background:var(--ink);color:#fff;box-shadow:0 -8px 30px rgba(0,0,0,.25);
+    padding:14px 18px;
+  }
+  .compare-bar.show{transform:translateY(0)}
+  .compare-bar.shake{animation:shake .4s}
+  @keyframes shake{0%,100%{transform:translateY(0)}25%{transform:translateY(0) translateX(-6px)}75%{transform:translateY(0) translateX(6px)}}
+  .cb-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .cb-slots{display:flex;gap:8px;flex:1;min-width:0;flex-wrap:wrap}
+  .cb-slot{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 8px 6px 12px;font-size:.84rem;max-width:100%}
+  .cb-slot b{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:160px}
+  .cb-slot button{background:rgba(255,255,255,.15);border:none;color:#fff;width:20px;height:20px;border-radius:50%;cursor:pointer;font-size:.9rem;line-height:1;display:grid;place-items:center}
+  .cb-slot button:hover{background:var(--cta)}
+  .cb-empty{font-size:.82rem;color:#94A3B8}
+  .cb-actions{display:flex;gap:10px;align-items:center}
+  .cb-go{background:var(--cta);color:#fff;border:none;font-family:inherit;font-weight:700;font-size:.9rem;padding:11px 20px;border-radius:12px;cursor:pointer;transition:background .2s}
+  .cb-go:hover{background:var(--cta-dark)}
+  .cb-go:disabled{background:#475569;cursor:not-allowed;opacity:.7}
+  .cb-clear{background:transparent;border:none;color:#CBD5E1;font-family:inherit;font-size:.84rem;cursor:pointer;text-decoration:underline}
+
+  /* modal */
+  .modal-back{position:fixed;inset:0;z-index:70;background:rgba(11,18,32,.72);backdrop-filter:blur(4px);display:none;align-items:flex-start;justify-content:center;padding:24px 14px;overflow-y:auto}
+  .modal-back.show{display:flex}
+  .modal{background:var(--bg);border-radius:20px;max-width:1000px;width:100%;box-shadow:0 30px 80px rgba(0,0,0,.4);overflow:hidden;margin:auto}
+  .modal-head{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;background:var(--primary);color:#fff}
+  .modal-head h3{font-family:'Playfair Display',serif;font-size:1.4rem}
+  .modal-x{background:rgba(255,255,255,.12);border:none;color:#fff;width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:1.2rem;line-height:1;display:grid;place-items:center;transition:background .2s}
+  .modal-x:hover{background:var(--cta)}
+  .modal-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table.vs{width:100%;border-collapse:collapse;min-width:560px}
+  table.vs th,table.vs td{padding:13px 16px;text-align:left;vertical-align:top;border-top:1px solid var(--line);font-size:.9rem}
+  table.vs thead th{border-top:none;background:var(--card);position:sticky;top:0}
+  table.vs .rowlabel{font-weight:700;color:var(--muted);font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;background:var(--bg);width:120px}
+  table.vs tbody tr:nth-child(even) td{background:#FBFCFE}
+  table.vs tbody tr:nth-child(even) .rowlabel{background:var(--bg)}
+  .vs-car{min-width:170px}
+  .vs-photo{height:74px;border-radius:12px;display:flex;flex-direction:column;justify-content:flex-end;padding:10px 12px;color:#fff;margin-bottom:10px;position:relative;overflow:hidden}
+  .vs-photo small{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.85)}
+  .vs-photo strong{font-family:'Playfair Display',serif;font-size:1.05rem;line-height:1.1}
+  .vs-rm{background:none;border:1px solid var(--line);color:var(--muted);font-family:inherit;font-size:.75rem;padding:5px 10px;border-radius:8px;cursor:pointer}
+  .vs-rm:hover{border-color:var(--cta);color:var(--cta)}
+  .vs-best{color:var(--green);font-weight:700}
+  @media(max-width:600px){
+    .modal-head h3{font-size:1.15rem}
+    .cb-go{padding:10px 14px}
+  }
+
   /* ---------- OPINIONS ---------- */
   .opin{background:var(--primary);color:#fff;border-radius:24px;padding:48px;margin-top:8px}
   .opin .sec-head h2{color:#fff}
@@ -287,6 +351,7 @@
       <table class="cmp" id="cmp">
         <thead>
           <tr>
+            <th class="no-sort pick">Comparar</th>
             <th class="no-sort">#</th>
             <th data-k="name" class="no-sort">Modelo</th>
             <th data-k="type">Tipo <span class="arr">▾</span></th>
@@ -338,6 +403,30 @@
 </section>
 
 <!-- ============ FOOTER ============ -->
+<!-- ============ COMPARE BAR ============ -->
+<div class="compare-bar" id="compareBar">
+  <div class="cb-inner">
+    <div class="cb-slots" id="cbSlots"></div>
+    <div class="cb-actions">
+      <button class="cb-clear" id="cbClear" type="button">Limpar</button>
+      <button class="cb-go" id="cbGo" type="button">Comparar lado a lado</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ COMPARE MODAL ============ -->
+<div class="modal-back" id="modalBack" role="dialog" aria-modal="true" aria-label="Comparação de modelos">
+  <div class="modal">
+    <div class="modal-head">
+      <h3>Comparação lado a lado</h3>
+      <button class="modal-x" id="modalX" type="button" aria-label="Fechar">✕</button>
+    </div>
+    <div class="modal-scroll">
+      <table class="vs" id="vsTable"></table>
+    </div>
+  </div>
+</div>
+
 <footer>
   <div class="wrap">
     <h3>Fontes consultadas</h3>
@@ -430,7 +519,7 @@ function card(c){
   const [c1,c2] = typeColor[c.type];
   const specsHtml = c.specs.map(s=>`<div class="spec"><span>${s[0]}</span><b>${s[1]}</b></div>`).join("");
   return `
-  <article class="car" data-type="${c.type}">
+  <article class="car" data-type="${c.type}" data-rank="${c.rank}">
     <a class="photo" href="${photoLink(c)}" target="_blank" rel="noopener" style="background:linear-gradient(135deg,${c1},${c2})" aria-label="Ver fotos reais do ${c.brand} ${c.model}">
       <div class="pattern"></div>
       <span class="rank">${c.rank}</span>
@@ -449,6 +538,7 @@ function card(c){
         <div class="mrow"><span class="k" style="display:flex;gap:6px;align-items:center;color:#475569">${svgMaint}</span><span class="v"><b style="color:#0F172A">Manutenção.</b> ${c.maint}</span></div>
         <div class="quote">${c.quote}</div>
       </div>
+      <button class="cmp-add" data-rank="${c.rank}" type="button"></button>
     </div>
   </article>`;
 }
@@ -484,6 +574,7 @@ function renderTable(){
   });
   tBody.innerHTML = arr.map(c=>`
     <tr>
+      <td class="pick"><input type="checkbox" class="cmp-check" data-rank="${c.rank}" ${(typeof isSel==='function'&&isSel(c.rank))?'checked':''} ${(typeof selected!=='undefined'&&selected.length>=3&&!(typeof isSel==='function'&&isSel(c.rank)))?'disabled':''} aria-label="Comparar ${c.brand} ${c.model}"></td>
       <td class="num">${c.rank}</td>
       <td class="model"><b>${c.brand} ${c.model}</b><small>${c.seg}</small></td>
       <td>${tag(c)}</td>
@@ -503,6 +594,92 @@ tHeads.forEach(th=>th.addEventListener("click",()=>{
   if(sortState.k===k){sortState.dir*=-1;} else {sortState.k=k; sortState.dir = (k==="name"||k==="type")?1:1;}
   renderTable();
 }));
+
+/* ---------- COMPARADOR (até 3 modelos) ---------- */
+const MAX_SEL = 3;
+let selected = []; // ranks na ordem de seleção
+const bar = document.getElementById("compareBar");
+const cbSlots = document.getElementById("cbSlots");
+const cbGo = document.getElementById("cbGo");
+const cbClear = document.getElementById("cbClear");
+const modalBack = document.getElementById("modalBack");
+const vsTable = document.getElementById("vsTable");
+const carByRank = r => cars.find(c=>c.rank===r);
+const isSel = r => selected.includes(r);
+const svgPlus = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>';
+const svgChk  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+
+function flashBar(){ bar.classList.add("shake"); setTimeout(()=>bar.classList.remove("shake"),420); }
+function toggleSel(r){
+  if(isSel(r)){ selected = selected.filter(x=>x!==r); }
+  else if(selected.length>=MAX_SEL){ flashBar(); return; }
+  else { selected.push(r); }
+  syncUI();
+}
+function syncUI(){
+  document.querySelectorAll(".cmp-add").forEach(b=>{
+    const r=+b.dataset.rank, on=isSel(r), full=selected.length>=MAX_SEL && !on;
+    b.classList.toggle("on",on);
+    b.classList.toggle("dim",full);
+    b.innerHTML = on ? (svgChk+" Selecionado") : (svgPlus+" Comparar");
+  });
+  document.querySelectorAll(".cmp-check").forEach(c=>{
+    const r=+c.dataset.rank, on=isSel(r);
+    c.checked=on;
+    c.disabled = selected.length>=MAX_SEL && !on;
+  });
+  renderBar();
+  if(modalBack.classList.contains("show")) renderModal();
+}
+function renderBar(){
+  bar.classList.toggle("show", selected.length>0);
+  if(!selected.length){ cbSlots.innerHTML=""; return; }
+  cbSlots.innerHTML = selected.map(r=>{
+    const c=carByRank(r);
+    return `<span class="cb-slot"><b>${c.brand} ${c.model}</b><button data-rank="${r}" aria-label="Remover">✕</button></span>`;
+  }).join("") + (selected.length<MAX_SEL ? `<span class="cb-empty">até ${MAX_SEL} modelos</span>`:"");
+  cbGo.disabled = selected.length<2;
+  cbGo.textContent = selected.length<2 ? "Selecione 2+" : `Comparar (${selected.length})`;
+}
+function renderModal(){
+  const sel = selected.map(carByRank);
+  const maxPot = Math.max(0,...sel.map(c=>c.pot||0));
+  const maxCons = Math.max(0,...sel.map(c=>c.cons||0));
+  const maxAut = Math.max(0,...sel.map(c=>c.aut||0));
+  const prices = sel.filter(c=>c.priceSort!==null).map(c=>c.priceSort);
+  const minPrice = prices.length?Math.min(...prices):null;
+  const best = (v,is)=> is?`<span class="vs-best">${v}</span>`:v;
+  const head = `<thead><tr><th class="rowlabel"></th>${sel.map(c=>{
+    const [c1,c2]=typeColor[c.type];
+    return `<th class="vs-car"><div class="vs-photo" style="background:linear-gradient(135deg,${c1},${c2})"><small>${c.brand}</small><strong>${c.model}</strong></div><button class="vs-rm" data-rank="${c.rank}" type="button">Remover</button></th>`;
+  }).join("")}</tr></thead>`;
+  const rows = [
+    ["Tipo", c=>tag(c)],
+    ["Preço", c=> c.priceSort!==null? best(c.price, c.priceSort===minPrice) : "A confirmar"],
+    ["Segmento", c=> c.seg],
+    ["Potência", c=> c.pot!==null? best(c.pot+" cv", c.pot===maxPot&&maxPot>0) : "—"],
+    ["Consumo", c=> c.cons!==null? best(c.cons.toString().replace('.',',')+" km/l", c.cons===maxCons&&maxCons>0) : "—"],
+    ["Aut. elétrica", c=> c.aut!==null? (c.aut===0? "Não pluga" : best(c.aut+" km", c.aut===maxAut&&maxAut>0)) : "—"],
+    ["Garantia", c=> c.warranty],
+    ["Manutenção", c=> c.maint],
+    ["Opinião", c=> c.quote]
+  ];
+  const body = "<tbody>"+rows.map(([label,fn])=>`<tr><td class="rowlabel">${label}</td>${sel.map(c=>`<td>${fn(c)}</td>`).join("")}</tr>`).join("")+"</tbody>";
+  vsTable.innerHTML = head+body;
+}
+function openModal(){ if(selected.length<2) return; renderModal(); modalBack.classList.add("show"); document.body.style.overflow="hidden"; }
+function closeModal(){ modalBack.classList.remove("show"); document.body.style.overflow=""; }
+
+document.getElementById("grid").addEventListener("click", e=>{ const b=e.target.closest(".cmp-add"); if(b) toggleSel(+b.dataset.rank); });
+tBody.addEventListener("change", e=>{ const c=e.target.closest(".cmp-check"); if(c) toggleSel(+c.dataset.rank); });
+cbSlots.addEventListener("click", e=>{ const b=e.target.closest("button[data-rank]"); if(b) toggleSel(+b.dataset.rank); });
+cbGo.addEventListener("click", openModal);
+cbClear.addEventListener("click", ()=>{ selected=[]; syncUI(); });
+vsTable.addEventListener("click", e=>{ const b=e.target.closest(".vs-rm"); if(b){ toggleSel(+b.dataset.rank); if(selected.length<2) closeModal(); } });
+document.getElementById("modalX").addEventListener("click", closeModal);
+modalBack.addEventListener("click", e=>{ if(e.target===modalBack) closeModal(); });
+document.addEventListener("keydown", e=>{ if(e.key==="Escape") closeModal(); });
+syncUI();
 
 /* ---------- FILTERS ---------- */
 const chips = document.querySelectorAll("#filters .chip");
