@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Os 30 Melhores Carros Híbridos do Brasil — 2026</title>
+<meta name="description" content="Guia editorial dos 30 melhores carros híbridos à venda no Brasil em 2026: do popular ao premium — preços, garantia, manutenção, consumo e o que os donos dizem." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#0F172A;
+    --primary:#1E293B;
+    --secondary:#334155;
+    --muted:#475569;
+    --line:#E2E8F0;
+    --bg:#F8FAFC;
+    --card:#FFFFFF;
+    --cta:#DC2626;
+    --cta-dark:#B91C1C;
+    --gold:#B45309;
+    --green:#047857;
+    --green-soft:#ECFDF5;
+    --blue:#1D4ED8;
+    --blue-soft:#EFF6FF;
+    --amber-soft:#FFFBEB;
+    --shadow:0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.06);
+    --shadow-lg:0 12px 40px rgba(15,23,42,.12);
+    --radius:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+  h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif}
+
+  /* ---------- HERO ---------- */
+  header.hero{
+    background:linear-gradient(160deg,#0B1220 0%,#1E293B 55%,#334155 100%);
+    color:#fff;position:relative;overflow:hidden;
+    padding:84px 0 96px;
+  }
+  header.hero::after{
+    content:"";position:absolute;right:-120px;top:-80px;width:520px;height:520px;
+    background:radial-gradient(circle,rgba(220,38,38,.30),transparent 62%);pointer-events:none;
+  }
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;
+    color:#FCA5A5;margin-bottom:22px;
+  }
+  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--cta)}
+  header.hero h1{font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.04;font-weight:700;max-width:16ch}
+  header.hero h1 em{color:#FCA5A5;font-style:italic}
+  header.hero p.lead{margin-top:22px;font-size:clamp(1.05rem,2vw,1.3rem);color:#CBD5E1;max-width:60ch;font-weight:300}
+  .hero-stats{display:flex;flex-wrap:wrap;gap:14px;margin-top:40px}
+  .hstat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px 20px;backdrop-filter:blur(6px)}
+  .hstat b{display:block;font-family:'Playfair Display',serif;font-size:1.7rem;line-height:1;color:#fff}
+  .hstat span{font-size:.82rem;color:#94A3B8}
+
+  /* ---------- METHOD NOTE ---------- */
+  .note{
+    background:var(--amber-soft);border:1px solid #FDE68A;border-radius:var(--radius);
+    padding:20px 24px;margin:42px 0 0;display:flex;gap:14px;align-items:flex-start;
+  }
+  .note svg{flex:none;color:var(--gold);margin-top:2px}
+  .note p{font-size:.92rem;color:#713F12}
+  .note b{color:#78350F}
+
+  /* ---------- GLOSSARY ---------- */
+  section{padding:64px 0}
+  .sec-head{text-align:center;max-width:64ch;margin:0 auto 44px}
+  .sec-head .eyebrow{color:var(--cta);justify-content:center}
+  .sec-head h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:700;line-height:1.1}
+  .sec-head p{margin-top:14px;color:var(--muted);font-size:1.05rem}
+  .glossary{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .gcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+  .gtag{display:inline-block;font-weight:700;font-size:.74rem;letter-spacing:.08em;padding:5px 12px;border-radius:999px;margin-bottom:14px}
+  .t-mhev{background:var(--amber-soft);color:var(--gold);border:1px solid #FDE68A}
+  .t-hev{background:var(--green-soft);color:var(--green);border:1px solid #A7F3D0}
+  .t-phev{background:var(--blue-soft);color:var(--blue);border:1px solid #BFDBFE}
+  .gcard h3{font-family:'Inter',sans-serif;font-size:1.15rem;font-weight:700;margin-bottom:8px}
+  .gcard p{font-size:.92rem;color:var(--muted)}
+
+  /* ---------- FILTER BAR ---------- */
+  .toolbar{position:sticky;top:0;z-index:30;background:rgba(248,250,252,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:14px 0}
+  .toolbar-inner{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:center}
+  .chip{
+    font-family:inherit;font-size:.86rem;font-weight:600;cursor:pointer;
+    border:1px solid var(--line);background:#fff;color:var(--secondary);
+    padding:9px 18px;border-radius:999px;transition:all .2s ease;
+  }
+  .chip:hover{border-color:var(--secondary);color:var(--ink)}
+  .chip.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+  .chip.active.f-mhev{background:var(--gold);border-color:var(--gold)}
+  .chip.active.f-hev{background:var(--green);border-color:var(--green)}
+  .chip.active.f-phev{background:var(--blue);border-color:var(--blue)}
+
+  /* ---------- GRID ---------- */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:8px}
+  .car{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;
+    transition:transform .25s ease,box-shadow .25s ease,opacity .3s ease;
+  }
+  .car:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+  .car.hide{display:none}
+
+  /* photo area = link to real photos */
+  .photo{
+    position:relative;display:block;text-decoration:none;height:188px;overflow:hidden;
+    background:linear-gradient(135deg,#1E293B,#334155);color:#fff;
+  }
+  .photo .pattern{position:absolute;inset:0;opacity:.16;background-image:radial-gradient(circle at 1px 1px,#fff 1px,transparent 0);background-size:18px 18px}
+  .photo .rank{position:absolute;top:14px;left:14px;width:42px;height:42px;border-radius:50%;background:#fff;color:var(--ink);font-family:'Playfair Display',serif;font-weight:700;font-size:1.25rem;display:grid;place-items:center;box-shadow:0 4px 12px rgba(0,0,0,.25)}
+  .photo .brand{position:absolute;bottom:16px;left:18px;right:18px}
+  .photo .brand small{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#CBD5E1}
+  .photo .brand strong{font-family:'Playfair Display',serif;font-weight:600;font-size:1.5rem;line-height:1.1}
+  .photo .seefotos{position:absolute;top:14px;right:14px;display:inline-flex;align-items:center;gap:6px;background:rgba(15,23,42,.55);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:.72rem;font-weight:600;padding:7px 11px;border-radius:999px;transition:background .2s}
+  .photo:hover .seefotos{background:var(--cta)}
+  .ptype{position:absolute;top:64px;left:14px;font-size:.66rem;font-weight:700;letter-spacing:.06em;padding:4px 10px;border-radius:999px}
+
+  .car-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+  .price-row{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:4px}
+  .price{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--ink)}
+  .price small{font-size:.78rem;color:var(--muted);font-weight:400;font-family:'Inter',sans-serif}
+  .seg{font-size:.78rem;color:var(--muted);margin-bottom:16px}
+
+  .specs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
+  .spec{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+  .spec span{display:block;font-size:.68rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+  .spec b{font-size:.95rem;color:var(--ink)}
+
+  .meta{border-top:1px solid var(--line);padding-top:14px;margin-top:auto;display:flex;flex-direction:column;gap:11px}
+  .mrow{display:flex;gap:10px;font-size:.86rem;align-items:flex-start}
+  .mrow svg{flex:none;width:17px;height:17px;margin-top:2px;color:var(--secondary)}
+  .mrow .k{color:var(--muted);font-weight:600;min-width:78px;flex:none}
+  .mrow .v{color:var(--ink)}
+  .quote{background:var(--bg);border-left:3px solid var(--cta);border-radius:0 10px 10px 0;padding:11px 14px;font-size:.85rem;color:var(--secondary);font-style:italic}
+
+  /* ---------- COMPARISON TABLE ---------- */
+  .table-hint{text-align:center;color:var(--muted);font-size:.88rem;margin-bottom:18px}
+  .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card);-webkit-overflow-scrolling:touch}
+  table.cmp{width:100%;border-collapse:collapse;min-width:720px;font-size:.9rem}
+  table.cmp thead th{
+    position:sticky;top:0;background:var(--primary);color:#fff;text-align:left;
+    padding:14px 16px;font-weight:600;white-space:nowrap;cursor:pointer;user-select:none;font-size:.82rem;letter-spacing:.02em;
+    transition:background .2s;
+  }
+  table.cmp thead th:hover{background:var(--secondary)}
+  table.cmp thead th.no-sort{cursor:default}
+  table.cmp thead th.no-sort:hover{background:var(--primary)}
+  table.cmp thead th .arr{opacity:.4;font-size:.7rem;margin-left:5px}
+  table.cmp thead th.sorted .arr{opacity:1;color:#FCA5A5}
+  table.cmp tbody td{padding:13px 16px;border-top:1px solid var(--line);white-space:nowrap;color:var(--ink)}
+  table.cmp tbody tr:nth-child(even){background:#FBFCFE}
+  table.cmp tbody tr:hover{background:var(--blue-soft)}
+  table.cmp td.model{white-space:normal;min-width:170px}
+  table.cmp td.model b{display:block;font-weight:600}
+  table.cmp td.model small{color:var(--muted);font-size:.78rem}
+  table.cmp td.price{font-weight:600}
+  .tt{display:inline-block;font-size:.68rem;font-weight:700;padding:3px 9px;border-radius:999px}
+  table.cmp td .dash{color:#94A3B8}
+  table.cmp .num{font-variant-numeric:tabular-nums}
+
+  /* ---------- OPINIONS ---------- */
+  .opin{background:var(--primary);color:#fff;border-radius:24px;padding:48px;margin-top:8px}
+  .opin .sec-head h2{color:#fff}
+  .opin .sec-head .eyebrow{color:#FCA5A5}
+  .opin .sec-head p{color:#CBD5E1}
+  .pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px}
+  .pc{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:26px}
+  .pc h3{font-family:'Inter',sans-serif;font-size:1.05rem;display:flex;align-items:center;gap:10px;margin-bottom:16px}
+  .pc ul{list-style:none;display:flex;flex-direction:column;gap:13px}
+  .pc li{display:flex;gap:11px;font-size:.92rem;color:#E2E8F0}
+  .pc li svg{flex:none;width:18px;height:18px;margin-top:2px}
+  .ic-up{color:#34D399}.ic-down{color:#FCA5A5}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:#0B1220;color:#94A3B8;padding:56px 0 40px;font-size:.88rem}
+  footer h3{color:#fff;font-family:'Inter',sans-serif;font-size:1rem;margin-bottom:14px}
+  footer a{color:#CBD5E1;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s}
+  footer a:hover{border-color:#CBD5E1}
+  .src-list{display:flex;flex-wrap:wrap;gap:8px 20px;margin-bottom:28px}
+  .disclaimer{border-top:1px solid #1E293B;padding-top:22px;color:#64748B;font-size:.82rem}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media(max-width:900px){
+    .grid{grid-template-columns:repeat(2,1fr)}
+    .glossary{grid-template-columns:1fr}
+    .pros-cons{grid-template-columns:1fr}
+    .opin{padding:32px 22px}
+  }
+  @media(max-width:600px){
+    .grid{grid-template-columns:1fr}
+    header.hero{padding:60px 0 64px}
+    section{padding:48px 0}
+  }
+  @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span> Guia de Compra · Junho 2026</span>
+    <h1>Os 30 melhores carros <em>híbridos</em> do Brasil</h1>
+    <p class="lead">Preço, garantia, manutenção, consumo real e o que os donos realmente dizem — do híbrido leve de R$105 mil ao Porsche e BMW de quase R$800 mil. Do popular ao premium, em um só lugar.</p>
+    <div class="hero-stats">
+      <div class="hstat"><b>30</b><span>modelos comparados</span></div>
+      <div class="hstat"><b>3</b><span>tecnologias (MHEV·HEV·PHEV)</span></div>
+      <div class="hstat"><b>R$105k–795k+</b><span>faixa de preço</span></div>
+      <div class="hstat"><b>489 cv</b><span>do mais potente nacional</span></div>
+    </div>
+    <div class="note" style="margin-top:36px;background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FCA5A5" stroke-width="2" stroke-linecap="round"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
+      <p style="color:#CBD5E1"><b style="color:#fff">Sobre as fotos:</b> cada card abre as <b style="color:#fff">fotos reais</b> do modelo (clique na imagem → busca de imagens / site oficial). Preços são de referência (jun/2026) e variam por versão, região e promoção — confirme na concessionária e na tabela FIPE.</p>
+    </div>
+  </div>
+</header>
+
+<!-- ============ GLOSSARY ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Entenda antes de escolher</span>
+      <h2>MHEV, HEV ou PHEV?</h2>
+      <p>Nem todo "híbrido" é igual. A sigla muda tudo: preço, economia, se precisa de tomada e o nível de manutenção.</p>
+    </div>
+    <div class="glossary">
+      <div class="gcard">
+        <span class="gtag t-mhev">MHEV · Híbrido leve</span>
+        <h3>Assistência elétrica</h3>
+        <p>Um motor elétrico de 12V/48V só ajuda o motor a combustão (partida, arrancada). Não anda sozinho no elétrico. É o mais barato e o mais simples de manter — risco de manutenção cara bem menor.</p>
+      </div>
+      <div class="gcard">
+        <span class="gtag t-hev">HEV · Híbrido pleno</span>
+        <h3>Anda no elétrico, sem tomada</h3>
+        <p>Recarrega sozinho (frenagem + motor). Roda curtas distâncias 100% elétrico em baixa velocidade. Não pluga na tomada. É a tecnologia mais econômica no dia a dia urbano brasileiro.</p>
+      </div>
+      <div class="gcard">
+        <span class="gtag t-phev">PHEV · Plug-in</span>
+        <h3>Recarrega na tomada</h3>
+        <p>Bateria grande, 60–119 km só no elétrico. Vira "elétrico" no trajeto curto e híbrido na estrada. Mais potente e caro — exige plugar com frequência e rodar a gasolina de vez em quando.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOOLBAR ============ -->
+<div class="toolbar">
+  <div class="wrap">
+    <div class="toolbar-inner" id="filters">
+      <button class="chip active" data-f="all">Todos os 30</button>
+      <button class="chip f-mhev" data-f="mhev">Híbrido leve (MHEV)</button>
+      <button class="chip f-hev" data-f="hev">Híbrido pleno (HEV)</button>
+      <button class="chip f-phev" data-f="phev">Plug-in (PHEV)</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ GRID ============ -->
+<section style="padding-top:40px">
+  <div class="wrap">
+    <div class="grid" id="grid"><!-- cards injetados via JS --></div>
+  </div>
+</section>
+
+<!-- ============ COMPARISON TABLE ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Compare lado a lado</span>
+      <h2>Tabela comparativa</h2>
+      <p>Toque no cabeçalho de uma coluna para ordenar (preço, potência, consumo ou autonomia elétrica). Toque de novo para inverter.</p>
+    </div>
+    <p class="table-hint">↔ Arraste a tabela para o lado para ver todas as colunas no celular.</p>
+    <div class="table-wrap">
+      <table class="cmp" id="cmp">
+        <thead>
+          <tr>
+            <th class="no-sort">#</th>
+            <th data-k="name" class="no-sort">Modelo</th>
+            <th data-k="type">Tipo <span class="arr">▾</span></th>
+            <th data-k="priceSort">Preço (R$) <span class="arr">▾</span></th>
+            <th data-k="pot">Potência (cv) <span class="arr">▾</span></th>
+            <th data-k="cons">Consumo (km/l) <span class="arr">▾</span></th>
+            <th data-k="aut">Aut. elétrica (km) <span class="arr">▾</span></th>
+          </tr>
+        </thead>
+        <tbody id="cmp-body"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPINIONS ============ -->
+<section>
+  <div class="wrap">
+    <div class="opin">
+      <div class="sec-head">
+        <span class="eyebrow">A voz de quem dirige</span>
+        <h2>O que os donos dizem</h2>
+        <p>Resumo das opiniões e queixas mais recorrentes entre proprietários e avaliações de imprensa especializada brasileira.</p>
+      </div>
+      <div class="pros-cons">
+        <div class="pc">
+          <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Elogios</h3>
+          <ul>
+            <li><svg class="ic-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> <span><b>Economia real</b> de combustível bem acima dos carros só a combustão — o motor elétrico assume o trânsito urbano.</span></li>
+            <li><svg class="ic-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> <span><b>Freios duram mais</b>: a frenagem regenerativa poupa pastilhas e discos.</span></li>
+            <li><svg class="ic-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> <span><b>Manutenção básica não é mais cara</b>: motor a combustão trabalha menos, óleo dura mais.</span></li>
+            <li><svg class="ic-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> <span><b>Garantia de bateria longa</b> (Toyota e BYD: 8 anos / 200.000 km), o que reduz o medo do custo de troca.</span></li>
+            <li><svg class="ic-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> <span><b>Rodar suave e silencioso</b>, com boa resposta em baixa velocidade.</span></li>
+          </ul>
+        </div>
+        <div class="pc">
+          <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FCA5A5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg> Queixas e atenção</h3>
+          <ul>
+            <li><svg class="ic-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg> <span><b>PHEV com bateria esgotada</b> fica "pesado": passa a depender só do motor a combustão, geralmente menos potente — sensível em subidas e ultrapassagens.</span></li>
+            <li><svg class="ic-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg> <span><b>Gasolina parada</b>: quem só pluga e quase não usa gasolina corre risco de o combustível oxidar no tanque e danificar a injeção. Rode a combustão de vez em quando.</span></li>
+            <li><svg class="ic-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg> <span><b>Bateria fora da garantia é cara</b> (ex.: Corolla Hybrid ~R$17.000). Pesa na compra de usado.</span></li>
+            <li><svg class="ic-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg> <span><b>Revisões em dia são obrigatórias</b> para manter a garantia (BYD: a cada 12 meses/20.000 km).</span></li>
+            <li><svg class="ic-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg> <span><b>BYD 2026/27 reduziu coberturas</b>: multimídia e faróis só até 60.000 km; regras não são retroativas.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <h3>Fontes consultadas</h3>
+    <div class="src-list">
+      <a href="https://www.toyota.com.br/modelos/corolla-cross-hybrid" target="_blank" rel="noopener">Toyota Brasil</a>
+      <a href="https://www.byd.com/br/manual-manutencao-garantia" target="_blank" rel="noopener">BYD Brasil</a>
+      <a href="https://www.gwmmotors.com.br/pt/modelos/haval-h6-phev-35" target="_blank" rel="noopener">GWM Motors</a>
+      <a href="https://www.webmotors.com.br/wm1/dinheiro-e-economia/carros-hibridos-ate-150-mil" target="_blank" rel="noopener">Webmotors</a>
+      <a href="https://canaltech.com.br/carros/5-carros-hibridos-hev-mais-economicos-do-brasil-em-2026/" target="_blank" rel="noopener">Canaltech</a>
+      <a href="https://www.terra.com.br/mobilidade/os-carros-hibridos-mais-economicos-do-brasil-em-2026,f5e358b8990a007fbba529d34fc23c91tsiq7yrb.html" target="_blank" rel="noopener">Terra Mobilidade</a>
+      <a href="https://www.vrum.com.br/bom-negocio/2026/03/7380162-os-carros-hibridos-mais-baratos-do-brasil-para-2026-veja-lista.html" target="_blank" rel="noopener">Vrum</a>
+      <a href="https://www.automaistv.com.br/novidades/caoa-chery-tiggo-7-pro-hybrid-sofre-reajuste-e-fica-mais-caro-em-maio/" target="_blank" rel="noopener">Auto+ TV</a>
+      <a href="https://www.otempo.com.br/autotempo/2026/6/1/caoa-chery-lanca-tiggo-7-e-8-phev-com-recarga-rapida" target="_blank" rel="noopener">O Tempo / AutoTempo</a>
+      <a href="https://revistaoeste.com/oestegeral/2026/03/25/qual-sera-o-custo-para-substituir-a-bateria-de-um-toyota-corolla-hibrido-em-2026/" target="_blank" rel="noopener">Revista Oeste</a>
+      <a href="https://newsmotor.com.br/dono-de-carro-hibrido-esses-2-problemas-escondidos-podem-te-dar-um-prejuizo-enorme/" target="_blank" rel="noopener">NewsMotor</a>
+      <a href="https://www.terra.com.br/mobilidade/carros/bmw-x5-xdrive50e-e-primeiro-phev-nacional-e-o-mais-caro-feito-no-brasil,b3f501958c24d52589a41fe75022c454v12hpif6.html" target="_blank" rel="noopener">Terra (BMW X5)</a>
+      <a href="https://www.volvocars.com/br/cars/xc60-hybrid/" target="_blank" rel="noopener">Volvo Cars Brasil</a>
+      <a href="https://www.webmotors.com.br/lexus/nx-350h/2026" target="_blank" rel="noopener">Webmotors (Lexus)</a>
+      <a href="https://www.automaistv.com.br/novidades/mitsubishi-lanca-o-novo-outlander-phev-a-partir-de-r-374-990/" target="_blank" rel="noopener">Auto+ (Outlander)</a>
+      <a href="https://www.giromarilia.com.br/veiculos/jeep-compass-4xe-o-novo-suv-hibrido-plug-in-vale-mesmo-a-pena/" target="_blank" rel="noopener">Giro Marília (Compass 4xe)</a>
+      <a href="https://clickpetroleoegas.com.br/gwm-tank-300-2026-chega-ao-brasil-com-421-cv-motor-2-0-turbo-hibrido-plug-in-autonomia-eletrica-de-105-km-e-recarga-em-apenas-16-minutos-asaf04/" target="_blank" rel="noopener">Click Petróleo e Gás (Tank 300)</a>
+      <a href="https://www.byd.com/br/car/king" target="_blank" rel="noopener">BYD King / Shark</a>
+    </div>
+    <div class="disclaimer">
+      <p>⚠ <b>Aviso:</b> Conteúdo informativo de referência, compilado em junho de 2026 a partir de fontes públicas. Preços, versões, garantias e itens de manutenção mudam com frequência e variam por versão, região e promoção. Itens marcados como <b>"a confirmar"</b> não tiveram valor oficial localizado nas fontes — consulte a concessionária e a tabela FIPE antes de qualquer decisão de compra. Este guia não é recomendação financeira nem substitui a consulta oficial.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---------- DADOS (pesquisa jun/2026) ---------- */
+const cars = [
+  {
+    rank:1, brand:"Peugeot", model:"208 GT Hybrid", type:"mhev",
+    price:"R$ 105–110 mil", priceNote:"aprox.", seg:"Hatch compacto · MHEV 12V",
+    specs:[["Sistema","Híbrido leve 12V"],["Destaque","Entrada mais barata"]],
+    warranty:"Garantia de fábrica Peugeot — a confirmar na rede",
+    maint:"Sistema MHEV simples: baixo risco de manutenção cara",
+    quote:"\"Um dos híbridos mais acessíveis do país, ao lado do Pulse.\""
+  },
+  {
+    rank:2, brand:"Fiat", model:"Pulse Hybrid", type:"mhev",
+    price:"R$ 135.990", priceNote:"a partir de · Bio-Hybrid ~R$100 mil", seg:"SUV compacto · MHEV 12V flex",
+    specs:[["Motor","1.0 turbo flex 130 cv"],["Sistema","Híbrido leve 12V"]],
+    warranty:"Garantia de fábrica Fiat — a confirmar na rede",
+    maint:"MHEV de baixa complexidade; flex (gasolina/etanol)",
+    quote:"\"O híbrido mais barato do Brasil em 2026, segundo os rankings.\""
+  },
+  {
+    rank:3, brand:"Caoa Chery", model:"Tiggo 5x Sport Hybrid", type:"hev",
+    price:"R$ 159.990", priceNote:"a partir de", seg:"SUV compacto · HEV",
+    specs:[["Sistema","Híbrido"],["Destaque","SUV híbrido de entrada"]],
+    warranty:"Garantia Caoa Chery — a confirmar na rede",
+    maint:"Revisões periódicas na rede autorizada",
+    quote:"\"Aparece entre os SUVs híbridos mais baratos do mercado.\""
+  },
+  {
+    rank:4, brand:"Fiat", model:"Fastback Hybrid", type:"mhev",
+    price:"R$ 165.990", priceNote:"a partir de", seg:"SUV cupê · MHEV flex",
+    specs:[["Sistema","Híbrido leve 12V"],["Estilo","SUV cupê"]],
+    warranty:"Garantia de fábrica Fiat — a confirmar na rede",
+    maint:"MHEV simples; mesma base do Pulse",
+    quote:"\"Visual de cupê com a economia do híbrido leve flex.\""
+  },
+  {
+    rank:5, brand:"BYD", model:"King DM-i", type:"phev",
+    price:"R$ 169.990", priceNote:"GL · GS R$ 175.990", seg:"Sedã médio · PHEV",
+    specs:[["Motor","1.5 + elétrico 179 cv"],["Autonomia elétr.","até 78 km · bat. 6,6 kWh"]],
+    warranty:"Bateria 8 anos / 200.000 km (linha 2026/27) · alta tensão 8 anos (uso particular)",
+    maint:"Revisão a cada 12 meses / 20.000 km · produzido em Camaçari (BA)",
+    quote:"\"Sedã plug-in mais barato do país — rival direto do Corolla.\""
+  },
+  {
+    rank:6, brand:"Toyota", model:"Corolla Cross Hybrid", type:"hev",
+    price:"R$ 170.790 – 215.990", priceNote:"conforme versão", seg:"SUV médio · HEV flex",
+    specs:[["Consumo","Híbrido pleno flex"],["Bateria nova","~R$ 17.000 (fora gar.)"]],
+    warranty:"Bateria híbrida 8 anos / 200.000 km · veículo até 10 anos (com revisões na rede)",
+    maint:"Revisão anual ou 10.000 km · 1ª grátis · plano de preço único Toyota",
+    quote:"\"O híbrido mais vendido; cuidado com custo de bateria no usado antigo.\""
+  },
+  {
+    rank:7, brand:"Toyota", model:"Yaris Cross Hybrid", type:"hev",
+    price:"R$ 172.390", priceNote:"versão XRE · HEV pleno mais barato", seg:"SUV compacto · HEV flex",
+    specs:[["Consumo","16,6 km/l (média)"],["Diferencial","Flex (etanol)"]],
+    warranty:"Bateria híbrida 8 anos / 200.000 km · veículo até 10 anos (com revisões na rede)",
+    maint:"Revisão anual ou 10.000 km · 1ª revisão grátis · plano com preço único no país",
+    quote:"\"O HEV pleno mais acessível, e ainda é flex — vantagem brasileira.\""
+  },
+  {
+    rank:8, brand:"Caoa Chery", model:"Tiggo 7 Pro Hybrid", type:"hev",
+    price:"R$ 181.990", priceNote:"versão Max Drive (mai/2026)", seg:"SUV médio · HEV",
+    specs:[["Potência","160 cv combinados"],["Novidade","Versão PHEV lançada jun/2026"]],
+    warranty:"Garantia Caoa Chery — a confirmar na rede",
+    maint:"Nova plataforma CCSH; PHEV ganhou recarga rápida DC",
+    quote:"\"Sofreu reajuste em maio; concorre direto com o BYD Song Pro.\""
+  },
+  {
+    rank:9, brand:"BYD", model:"Song Pro DM-i", type:"phev",
+    price:"R$ 190 mil", priceNote:"aprox. (versão de entrada)", seg:"SUV médio · PHEV",
+    specs:[["Sistema","DM-i plug-in"],["Bateria","Blade"]],
+    warranty:"Bateria 8 anos / 200.000 km (linha 2026/27) · alta tensão 8 anos (uso particular)",
+    maint:"Revisão a cada 12 meses / 20.000 km (obrigatória p/ garantia)",
+    quote:"\"PHEV mais em conta da BYD; bom espaço e custo de uso baixo.\""
+  },
+  {
+    rank:10, brand:"Toyota", model:"Corolla Altis Hybrid", type:"hev",
+    price:"R$ 191.990", priceNote:"a partir de", seg:"Sedã médio · HEV flex",
+    specs:[["Motor","1.8 flex + 2 mot. elétricos"],["Modo","100% elétrico curto"]],
+    warranty:"Bateria híbrida 8 anos / 200.000 km · veículo até 10 anos (com revisões na rede)",
+    maint:"Revisão anual ou 10.000 km · plano de preço único Toyota",
+    quote:"\"Confiabilidade e rede Toyota são os pontos mais elogiados.\""
+  },
+  {
+    rank:11, brand:"Hyundai", model:"Kona HEV", type:"hev",
+    price:"R$ 219.990", priceNote:"versão Prestige", seg:"SUV compacto · HEV",
+    specs:[["Consumo","17,2 km/l — LÍDER"],["Cidade","18,4 km/l"]],
+    warranty:"Garantia Hyundai — a confirmar na rede",
+    maint:"Revisões periódicas na rede autorizada",
+    quote:"\"Lidera o ranking de economia entre os híbridos do Brasil em 2026.\""
+  },
+  {
+    rank:12, brand:"BYD", model:"Song Plus DM-i", type:"phev",
+    price:"R$ 219.990", priceNote:"entrada · Premium ~R$250 mil", seg:"SUV médio · PHEV",
+    specs:[["Autonomia elétr.","63 km (PBEV) / 100 km (NEDC)"],["Bateria","Blade"]],
+    warranty:"Bateria 8 anos / 200.000 km (linha 2026/27) · multimídia e faróis até 60.000 km · chassi 6 anos",
+    maint:"Revisão a cada 12 meses / 20.000 km (obrigatória p/ garantia)",
+    quote:"\"PHEV mais popular da BYD; ótimo para quem pluga todo dia.\""
+  },
+  {
+    rank:13, brand:"Honda", model:"Civic Hybrid", type:"hev",
+    price:"R$ 266.500", priceNote:"", seg:"Sedã médio · HEV",
+    specs:[["Consumo","17,15 km/l (média)"],["Estrada","15,9 km/l"]],
+    warranty:"Garantia Honda — a confirmar na rede",
+    maint:"Revisões periódicas na rede autorizada",
+    quote:"\"Equilíbrio fino entre consumo urbano e de estrada; refinamento.\""
+  },
+  {
+    rank:14, brand:"GWM", model:"Haval H6 PHEV35", type:"phev",
+    price:"R$ 289.000", priceNote:"aprox.", seg:"SUV médio · PHEV AWD",
+    specs:[["Potência","393 cv / 78,7 kgfm"],["Autonomia elétr.","até 119 km · bat. 35 kWh"]],
+    warranty:"Garantia GWM — a confirmar na rede",
+    maint:"AWD com 2º motor traseiro (184 cv); topo de linha do H6",
+    quote:"\"Um dos plug-in mais potentes da faixa — quase um esportivo.\""
+  },
+  {
+    rank:15, brand:"GWM", model:"Tank 300 PHEV", type:"phev",
+    price:"R$ 339.000", priceNote:"aprox.", seg:"SUV off-road · PHEV 4x4",
+    specs:[["Potência","421 cv"],["Autonomia elétr.","75 km · bat. 37,1 kWh · recarga 16 min"]],
+    warranty:"Garantia GWM — a confirmar na rede",
+    maint:"Nova bateria CATL; recarga rápida; vocação off-road",
+    quote:"\"Off-road robusto com força de elétrico e recarga relâmpago.\""
+  },
+  {
+    rank:16, brand:"Jeep", model:"Compass 4xe", type:"phev",
+    price:"R$ 349.990", priceNote:"", seg:"SUV médio · PHEV 4x4",
+    specs:[["Motor","1.3 turbo 180 cv + elétr. 60 cv"],["Tração","4x4 elétrica"]],
+    warranty:"Garantia Jeep — a confirmar na rede",
+    maint:"Já entre os PHEV mais vendidos do Brasil",
+    quote:"\"Plug-in nacional consolidado; bom equilíbrio entre força e 4x4.\""
+  },
+  {
+    rank:17, brand:"GWM", model:"Tank 500", type:"phev",
+    price:"R$ 350.000", priceNote:"a partir de (previsto)", seg:"SUV grande off-road · híbrido",
+    specs:[["Potência","408 cv / 76 kgfm"],["Motor","2.0 turbo + elétrico"]],
+    warranty:"Garantia GWM — a confirmar na rede",
+    maint:"Rival do Toyota SW4; foco em luxo + off-road",
+    quote:"\"SUV off-road grande, parrudo e tecnológico, com pegada premium.\""
+  },
+  {
+    rank:18, brand:"Lexus", model:"RX 500h", type:"hev",
+    price:"R$ 357.900", priceNote:"a partir de", seg:"SUV grande de luxo · HEV",
+    specs:[["Marca","Luxo Toyota/Lexus"],["Sistema","Híbrido pleno"]],
+    warranty:"Garantia Lexus — a confirmar na rede",
+    maint:"Confiabilidade Toyota com acabamento premium",
+    quote:"\"Refinamento e silêncio de luxo com a robustez híbrida da Lexus.\""
+  },
+  {
+    rank:19, brand:"Mitsubishi", model:"Outlander PHEV", type:"phev",
+    price:"R$ 374.990", priceNote:"HPE-S · Signature R$ 389.990", seg:"SUV médio · PHEV 4x4",
+    specs:[["Potência","252 cv · 4x4"],["Motor","2.4 + 2 motores elétricos"]],
+    warranty:"Garantia Mitsubishi — a confirmar na rede",
+    maint:"Plug-in consolidado mundialmente; tração 4×4 elétrica",
+    quote:"\"Um dos pioneiros do PHEV; tração 4x4 e bom espaço familiar.\""
+  },
+  {
+    rank:20, brand:"Lexus", model:"NX 350h", type:"hev",
+    price:"R$ 399.990", priceNote:"à vista", seg:"SUV médio de luxo · HEV",
+    specs:[["Potência","até 246 cv combinados"],["Motor","2.5 + elétr. diant. e tras."]],
+    warranty:"Garantia Lexus — a confirmar na rede",
+    maint:"Versões Dynamic, Luxury e F-Sport · confiabilidade Toyota",
+    quote:"\"O luxo acessível da Lexus com a economia do híbrido pleno.\""
+  },
+  {
+    rank:21, brand:"Volvo", model:"XC60 Recharge", type:"phev",
+    price:"R$ 459.950 – 539.950", priceNote:"conforme versão", seg:"SUV médio premium · PHEV",
+    specs:[["Potência","462 cv · AWD"],["Autonomia elétr.","~48 km"]],
+    warranty:"Garantia Volvo — a confirmar na rede",
+    maint:"2.0 turbo + elétrico traseiro · câmbio 8 marchas",
+    quote:"\"Premium sueco; entre os PHEV de luxo mais vendidos do país.\""
+  },
+  {
+    rank:22, brand:"Mercedes-Benz", model:"GLC 300", type:"mhev",
+    price:"R$ 514.900", priceNote:"", seg:"SUV médio premium · MHEV 48V",
+    specs:[["Motor","2.0 turbo 258 cv"],["Sistema","Híbrido leve 48V"]],
+    warranty:"Garantia Mercedes-Benz — a confirmar na rede",
+    maint:"SUV mais vendido da Mercedes no Brasil; também em Coupé",
+    quote:"\"Híbrido leve premium: refinamento Mercedes com toque elétrico.\""
+  },
+  {
+    rank:23, brand:"Volvo", model:"XC90 Recharge", type:"phev",
+    price:"R$ 639.950", priceNote:"a partir de", seg:"SUV grande premium 7 lug. · PHEV",
+    specs:[["Potência","~462 cv (T8)"],["Lugares","7 · AWD"]],
+    warranty:"Garantia Volvo — a confirmar na rede",
+    maint:"Trem de força T8 plug-in; líder de vendas PHEV de luxo",
+    quote:"\"O grande SUV familiar premium plug-in — segurança Volvo.\""
+  },
+  {
+    rank:24, brand:"BMW", model:"X5 xDrive50e", type:"phev",
+    price:"R$ 786.950", priceNote:"X-Line · M Sport R$ 838.950", seg:"SUV grande premium · PHEV",
+    specs:[["Potência","489 cv · 0–100 em 4,8 s"],["Bateria","25,7 kWh"]],
+    warranty:"Garantia BMW — a confirmar na rede",
+    maint:"3.0 6-cil. + elétrico · PHEV produzido em Araquari (SC)",
+    quote:"\"O carro mais potente e tecnológico produzido no Brasil.\""
+  },
+  {
+    rank:25, brand:"Porsche", model:"Cayenne E-Hybrid", type:"phev",
+    price:"R$ 795 mil +", priceNote:"linha vai até R$ 1,36 mi", seg:"SUV esportivo de luxo · PHEV",
+    specs:[["Potência","de 470 a 739 cv"],["Marca","Alta performance"]],
+    warranty:"Garantia Porsche — a confirmar na rede",
+    maint:"Híbridos plug-in que unem desempenho e recuperação de energia",
+    quote:"\"Performance pura de Porsche com eficiência plug-in. Topo absoluto.\""
+  },
+  {
+    rank:26, brand:"GWM", model:"Haval H6 (HEV2)", type:"hev",
+    price:"A confirmar", priceNote:"versão híbrida HEV", seg:"SUV médio · HEV",
+    specs:[["Potência","243 cv combinados"],["Bateria","1,6 kWh"]],
+    warranty:"Garantia GWM — a confirmar na rede",
+    maint:"Motor 1.5 turbo 150 cv + elétrico 177 cv",
+    quote:"\"Apontado como o SUV híbrido nº 1 de vendas do Brasil.\""
+  },
+  {
+    rank:27, brand:"BYD", model:"Shark", type:"phev",
+    price:"A confirmar", priceNote:"picape plug-in", seg:"Picape grande · PHEV 4x4",
+    specs:[["Potência","437 cv · 0–100 em 5,7 s"],["Autonomia elétr.","57 km · caçamba 1.200 L"]],
+    warranty:"Bateria 8 anos / 200.000 km (linha 2026/27)",
+    maint:"1ª picape plug-in do Brasil; rival de Hilux e Ranger",
+    quote:"\"Picape que acelera como esportivo e ainda pluga na tomada.\""
+  },
+  {
+    rank:28, brand:"Caoa Chery", model:"Tiggo 8 Pro PHEV", type:"phev",
+    price:"A confirmar", priceNote:"lançado jun/2026", seg:"SUV grande 7 lugares · PHEV",
+    specs:[["Potência","317 cv"],["Autonomia elétr.","até 70 km · recarga DC"]],
+    warranty:"Garantia Caoa Chery — a confirmar na rede",
+    maint:"Plataforma CCSH com recarga rápida DC (inédita na marca)",
+    quote:"\"SUV familiar de 7 lugares com proposta plug-in e recarga rápida.\""
+  },
+  {
+    rank:29, brand:"Caoa Chery", model:"Tiggo 7 Pro PHEV", type:"phev",
+    price:"A confirmar", priceNote:"lançado jun/2026", seg:"SUV médio · PHEV",
+    specs:[["Potência","279 cv / 365 Nm"],["Autonomia elétr.","até 70 km · recarga DC"]],
+    warranty:"Garantia Caoa Chery — a confirmar na rede",
+    maint:"Nova plataforma CCSH; até 38,6 km/l no ciclo PHEV",
+    quote:"\"Versão plug-in do Tiggo 7, mais potente e com recarga rápida.\""
+  },
+  {
+    rank:30, brand:"Land Rover", model:"Range Rover Evoque P300e", type:"phev",
+    price:"A confirmar", priceNote:"ver tabela FIPE jun/2026", seg:"SUV médio premium · PHEV",
+    specs:[["Sistema","Plug-in P300e"],["Marca","Luxo britânico"]],
+    warranty:"Garantia Land Rover — a confirmar na rede",
+    maint:"SUV premium compacto com versão híbrida plug-in",
+    quote:"\"Estilo e status britânico com a eficiência de um plug-in.\""
+  }
+];
+
+/* dados numéricos p/ ordenação — null = não divulgado nas fontes */
+const cmp = {
+  1:{price:105,   pot:null, cons:null,  aut:0},
+  2:{price:135.99,pot:130,  cons:null,  aut:0},
+  3:{price:159.99,pot:null, cons:null,  aut:null},
+  4:{price:165.99,pot:null, cons:null,  aut:0},
+  5:{price:169.99,pot:179,  cons:null,  aut:78},
+  6:{price:170.79,pot:null, cons:null,  aut:null},
+  7:{price:172.39,pot:null, cons:16.6,  aut:null},
+  8:{price:181.99,pot:160,  cons:null,  aut:null},
+  9:{price:190,   pot:null, cons:null,  aut:null},
+  10:{price:191.99,pot:null,cons:null,  aut:null},
+  11:{price:219.99,pot:null,cons:17.2,  aut:0},
+  12:{price:219.99,pot:null,cons:null,  aut:63},
+  13:{price:266.5, pot:null,cons:17.15, aut:0},
+  14:{price:289,   pot:393, cons:null,  aut:119},
+  15:{price:339,   pot:421, cons:null,  aut:75},
+  16:{price:349.99,pot:null,cons:null,  aut:null},
+  17:{price:350,   pot:408, cons:null,  aut:null},
+  18:{price:357.9, pot:null,cons:null,  aut:0},
+  19:{price:374.99,pot:252, cons:null,  aut:null},
+  20:{price:399.99,pot:246, cons:null,  aut:0},
+  21:{price:459.95,pot:462, cons:null,  aut:48},
+  22:{price:514.9, pot:258, cons:null,  aut:0},
+  23:{price:639.95,pot:462, cons:null,  aut:null},
+  24:{price:786.95,pot:489, cons:null,  aut:null},
+  25:{price:795,   pot:470, cons:null,  aut:null},
+  26:{price:null,  pot:243, cons:null,  aut:0},
+  27:{price:null,  pot:437, cons:null,  aut:57},
+  28:{price:null,  pot:317, cons:null,  aut:70},
+  29:{price:null,  pot:279, cons:38.6,  aut:70},
+  30:{price:null,  pot:null,cons:null,  aut:null}
+};
+cars.forEach(c=>{ const m=cmp[c.rank]; c.priceSort=m.price; c.pot=m.pot; c.cons=m.cons; c.aut=m.aut; });
+
+const typeTag = {
+  mhev:{label:"MHEV · leve", cls:"t-mhev"},
+  hev:{label:"HEV · pleno", cls:"t-hev"},
+  phev:{label:"PHEV · plug-in", cls:"t-phev"}
+};
+const typeColor = {mhev:["#B45309","#92400E"], hev:["#047857","#065F46"], phev:["#1D4ED8","#1E3A8A"]};
+
+const svgWarranty = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>';
+const svgMaint = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2.1-2.1z"/></svg>';
+const svgCam = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3.5"/></svg>';
+
+function photoLink(c){
+  const q = encodeURIComponent(c.brand + " " + c.model + " 2026");
+  return "https://www.google.com/search?tbm=isch&q=" + q;
+}
+
+function card(c){
+  const tg = typeTag[c.type];
+  const [c1,c2] = typeColor[c.type];
+  const specsHtml = c.specs.map(s=>`<div class="spec"><span>${s[0]}</span><b>${s[1]}</b></div>`).join("");
+  return `
+  <article class="car" data-type="${c.type}">
+    <a class="photo" href="${photoLink(c)}" target="_blank" rel="noopener" style="background:linear-gradient(135deg,${c1},${c2})" aria-label="Ver fotos reais do ${c.brand} ${c.model}">
+      <div class="pattern"></div>
+      <span class="rank">${c.rank}</span>
+      <span class="ptype gtag ${tg.cls}">${tg.label}</span>
+      <span class="seefotos">${svgCam} Ver fotos</span>
+      <span class="brand"><small>${c.brand}</small><strong>${c.model}</strong></span>
+    </a>
+    <div class="car-body">
+      <div class="price-row">
+        <span class="price">${c.price}</span>
+      </div>
+      <div class="seg">${c.priceNote ? c.priceNote+" · " : ""}${c.seg}</div>
+      <div class="specs">${specsHtml}</div>
+      <div class="meta">
+        <div class="mrow"><span class="k" style="display:flex;gap:6px;align-items:center;color:#475569">${svgWarranty}</span><span class="v"><b style="color:#0F172A">Garantia.</b> ${c.warranty}</span></div>
+        <div class="mrow"><span class="k" style="display:flex;gap:6px;align-items:center;color:#475569">${svgMaint}</span><span class="v"><b style="color:#0F172A">Manutenção.</b> ${c.maint}</span></div>
+        <div class="quote">${c.quote}</div>
+      </div>
+    </div>
+  </article>`;
+}
+
+document.getElementById("grid").innerHTML = cars.map(card).join("");
+
+/* fix icon sizing inside mrow */
+document.querySelectorAll(".mrow .k svg").forEach(s=>{s.style.width="17px";s.style.height="17px"});
+
+/* ---------- COMPARISON TABLE ---------- */
+const tBody = document.getElementById("cmp-body");
+const tHeads = document.querySelectorAll("#cmp thead th[data-k]");
+let sortState = {k:"priceSort", dir:1}; // 1 asc, -1 desc
+const dash = '<span class="dash">—</span>';
+const priceText = {
+ 1:"105–110 mil",2:"135.990",3:"159.990",4:"165.990",5:"169.990",6:"170.790–215.990",
+ 7:"172.390",8:"181.990",9:"~190 mil",10:"191.990",11:"219.990",12:"219.990",13:"266.500",
+ 14:"289.000",15:"339.000",16:"349.990",17:"350.000",18:"357.900",19:"374.990",20:"399.990",
+ 21:"459.950–539.950",22:"514.900",23:"639.950",24:"786.950–838.950",25:"795 mil +",
+ 26:"a confirmar",27:"a confirmar",28:"a confirmar",29:"a confirmar",30:"a confirmar"
+};
+cars.forEach(c=>c.priceRaw=priceText[c.rank]);
+
+function tag(c){
+  const tg = typeTag[c.type];
+  const map = {mhev:["#FEF3C7","#92400E"],hev:["#D1FAE5","#065F46"],phev:["#DBEAFE","#1E3A8A"]};
+  const [bg,fg]=map[c.type];
+  return `<span class="tt" style="background:${bg};color:${fg}">${tg.label}</span>`;
+}
+
+function renderTable(){
+  const arr = [...cars].sort((a,b)=>{
+    let va=a[sortState.k], vb=b[sortState.k];
+    if(sortState.k==="name"){va=a.brand+" "+a.model; vb=b.brand+" "+b.model; return va.localeCompare(vb)*sortState.dir;}
+    if(sortState.k==="type"){return a.type.localeCompare(b.type)*sortState.dir;}
+    // numéricos: nulls sempre por último
+    const an=(va===null||va===undefined), bn=(vb===null||vb===undefined);
+    if(an&&bn) return a.rank-b.rank;
+    if(an) return 1; if(bn) return -1;
+    return (va-vb)*sortState.dir;
+  });
+  tBody.innerHTML = arr.map(c=>`
+    <tr>
+      <td class="num">${c.rank}</td>
+      <td class="model"><b>${c.brand} ${c.model}</b><small>${c.seg}</small></td>
+      <td>${tag(c)}</td>
+      <td class="price num">${c.priceSort!==null ? "R$ "+c.priceRaw : '<span class="dash">a confirmar</span>'}</td>
+      <td class="num">${c.pot!==null ? c.pot : dash}</td>
+      <td class="num">${c.cons!==null ? c.cons.toString().replace('.',',') : dash}</td>
+      <td class="num">${c.aut!==null ? (c.aut===0 ? '<span class="dash">não pluga</span>' : c.aut) : dash}</td>
+    </tr>`).join("");
+  tHeads.forEach(th=>{
+    th.classList.toggle("sorted", th.dataset.k===sortState.k);
+    const a=th.querySelector(".arr"); if(a) a.textContent = (th.dataset.k===sortState.k && sortState.dir===-1) ? "▴" : "▾";
+  });
+}
+renderTable();
+tHeads.forEach(th=>th.addEventListener("click",()=>{
+  const k=th.dataset.k;
+  if(sortState.k===k){sortState.dir*=-1;} else {sortState.k=k; sortState.dir = (k==="name"||k==="type")?1:1;}
+  renderTable();
+}));
+
+/* ---------- FILTERS ---------- */
+const chips = document.querySelectorAll("#filters .chip");
+chips.forEach(chip=>{
+  chip.addEventListener("click",()=>{
+    chips.forEach(c=>c.classList.remove("active"));
+    chip.classList.add("active");
+    const f = chip.dataset.f;
+    document.querySelectorAll(".car").forEach(card=>{
+      const show = (f==="all" || card.dataset.type===f);
+      card.classList.toggle("hide",!show);
+    });
+  });
+});
+</script>
+</body>
+</html>
