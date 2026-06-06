@@ -482,6 +482,10 @@ const cars = [
 ];
 cars.forEach((c,i)=>c.rank=i+1);
 
+/* estado da comparação — declarado no topo p/ evitar TDZ no renderTable */
+let selected = [];                          // ranks selecionados (ordem de seleção)
+function isSel(r){ return selected.includes(r); }
+
 const typeTag = {
   mhev:{label:"MHEV · leve", cls:"t-mhev"},
   hev:{label:"HEV · pleno", cls:"t-hev"},
@@ -581,7 +585,6 @@ tHeads.forEach(th=>th.addEventListener("click",()=>{
 
 /* ---------- COMPARADOR (até 3 modelos) ---------- */
 const MAX_SEL = 3;
-let selected = []; // ranks na ordem de seleção
 const bar = document.getElementById("compareBar");
 const cbSlots = document.getElementById("cbSlots");
 const cbGo = document.getElementById("cbGo");
@@ -589,7 +592,6 @@ const cbClear = document.getElementById("cbClear");
 const modalBack = document.getElementById("modalBack");
 const vsTable = document.getElementById("vsTable");
 const carByRank = r => cars.find(c=>c.rank===r);
-const isSel = r => selected.includes(r);
 const svgPlus = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>';
 const svgChk  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
 
