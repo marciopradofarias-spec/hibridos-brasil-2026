@@ -279,7 +279,7 @@
     <h1>Os melhores carros <em>híbridos</em> do Brasil até R$300 mil</h1>
     <p class="lead">Preço, garantia, manutenção, consumo real e o que os donos realmente dizem — do híbrido leve de R$105 mil ao SUV plug-in de R$289 mil — todas as opções até R$300 mil, em um só lugar.</p>
     <div class="hero-stats">
-      <div class="hstat"><b>18</b><span>modelos comparados</span></div>
+      <div class="hstat"><b>16</b><span>modelos comparados</span></div>
       <div class="hstat"><b>3</b><span>tecnologias (MHEV·HEV·PHEV)</span></div>
       <div class="hstat"><b>R$105k–289k</b><span>faixa de preço</span></div>
       <div class="hstat"><b>393 cv</b><span>do plug-in mais potente</span></div>
@@ -323,7 +323,7 @@
 <div class="toolbar">
   <div class="wrap">
     <div class="toolbar-inner" id="filters">
-      <button class="chip active" data-f="all">Todos os 18</button>
+      <button class="chip active" data-f="all">Todos os 16</button>
       <button class="chip f-mhev" data-f="mhev">Híbrido leve (MHEV)</button>
       <button class="chip f-hev" data-f="hev">Híbrido pleno (HEV)</button>
       <button class="chip f-phev" data-f="phev">Plug-in (PHEV)</button>
@@ -462,9 +462,7 @@
 /* ---------- DADOS (pesquisa jun/2026) ---------- */
 const cars = [
   {brand:'Peugeot', model:'208 GT Hybrid', type:'mhev', price:'R$ 105–110 mil', priceNote:'aprox.', seg:'Hatch compacto · MHEV 12V', specs:[['Sistema','Híbrido leve 12V'],['Destaque','Entrada mais barata']], warranty:'Garantia de fábrica Peugeot — a confirmar na rede', maint:'Sistema MHEV simples: baixo risco de manutenção cara', quote:'"Um dos híbridos mais acessíveis do país, ao lado do Pulse."', priceSort:105, pot:null, cons:null, aut:0},
-  {brand:'Fiat', model:'Pulse Hybrid', type:'mhev', price:'R$ 135.990', priceNote:'a partir de · Bio-Hybrid ~R$100 mil', seg:'SUV compacto · MHEV 12V flex', specs:[['Motor','1.0 turbo flex 130 cv'],['Sistema','Híbrido leve 12V']], warranty:'Garantia de fábrica Fiat — a confirmar na rede', maint:'MHEV de baixa complexidade; flex (gasolina/etanol)', quote:'"O híbrido mais barato do Brasil em 2026, segundo os rankings."', priceSort:135.99, pot:130, cons:null, aut:0},
   {brand:'Caoa Chery', model:'Tiggo 5x Sport Hybrid', type:'hev', price:'R$ 159.990', priceNote:'a partir de', seg:'SUV compacto · HEV', specs:[['Sistema','Híbrido'],['Destaque','SUV híbrido de entrada']], warranty:'Garantia Caoa Chery — a confirmar na rede', maint:'Revisões periódicas na rede autorizada', quote:'"Aparece entre os SUVs híbridos mais baratos do mercado."', priceSort:159.99, pot:null, cons:null, aut:null},
-  {brand:'Fiat', model:'Fastback Hybrid', type:'mhev', price:'R$ 165.990', priceNote:'a partir de', seg:'SUV cupê · MHEV flex', specs:[['Sistema','Híbrido leve 12V'],['Estilo','SUV cupê']], warranty:'Garantia de fábrica Fiat — a confirmar na rede', maint:'MHEV simples; mesma base do Pulse', quote:'"Visual de cupê com a economia do híbrido leve flex."', priceSort:165.99, pot:null, cons:null, aut:0},
   {brand:'BYD', model:'King DM-i', type:'phev', price:'R$ 169.990', priceNote:'GL · GS R$ 175.990', seg:'Sedã médio · PHEV', specs:[['Motor','1.5 + elétrico 179 cv'],['Autonomia elétr.','até 78 km · bat. 6,6 kWh']], warranty:'Bateria 8 anos / 200.000 km (linha 2026/27) · alta tensão 8 anos (uso particular)', maint:'Revisão a cada 12 meses / 20.000 km · produzido em Camaçari (BA)', quote:'"Sedã plug-in mais barato do país — rival direto do Corolla."', priceSort:169.99, pot:179, cons:null, aut:78},
   {brand:'Toyota', model:'Corolla Cross Hybrid', type:'hev', price:'R$ 170.790 – 215.990', priceNote:'conforme versão', seg:'SUV médio · HEV flex', specs:[['Consumo','Híbrido pleno flex'],['Bateria nova','~R$ 17.000 (fora gar.)']], warranty:'Bateria híbrida 8 anos / 200.000 km · veículo até 10 anos (com revisões na rede)', maint:'Revisão anual ou 10.000 km · 1ª grátis · plano de preço único Toyota', quote:'"O híbrido mais vendido; cuidado com custo de bateria no usado antigo."', priceSort:170.79, pot:null, cons:null, aut:null},
   {brand:'Toyota', model:'Yaris Cross Hybrid', type:'hev', price:'R$ 172.390', priceNote:'versão XRE · HEV pleno mais barato', seg:'SUV compacto · HEV flex', specs:[['Consumo','16,6 km/l (média)'],['Diferencial','Flex (etanol)']], warranty:'Bateria híbrida 8 anos / 200.000 km · veículo até 10 anos (com revisões na rede)', maint:'Revisão anual ou 10.000 km · 1ª revisão grátis · plano com preço único no país', quote:'"O HEV pleno mais acessível, e ainda é flex — vantagem brasileira."', priceSort:172.39, pot:null, cons:16.6, aut:null},
